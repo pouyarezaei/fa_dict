@@ -31,7 +31,7 @@ class _SplashScreenWidgetState extends State<SplashScreenWidget> {
             children: [
               CircularProgressIndicator(
                 strokeWidth: 2,
-                color: wildWatermelon,
+                color: ColorPalette.wildWatermelon,
               ),
               SizedBox(
                 height: 5,
