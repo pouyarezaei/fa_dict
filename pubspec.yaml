@@ -32,6 +32,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   path_provider: ^2.0.2
   animations: ^2.0.1
+  flag: ^5.0.1
 
 dev_dependencies:
   flutter_test:
@@ -47,6 +48,7 @@ flutter:
       fonts:
         - asset: fonts/IranSans-Regular.ttf
         - asset: fonts/IranSans-Bold.ttf
+          weight: 700
   assets:
     - assets/splash.jpg
     - assets/
