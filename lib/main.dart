@@ -13,7 +13,7 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(primaryColor: wildWatermelon, fontFamily: 'IranSans'),
+      theme: ThemeData(primaryColor: ColorPalette.wildWatermelon, fontFamily: 'IranSans'),
       home: MultiBlocProvider(
         providers: [
           BlocProvider<DatabaseBuilderBloc>(
