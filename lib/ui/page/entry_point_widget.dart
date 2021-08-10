@@ -24,7 +24,8 @@ class _EntryPointWidgetState extends State<EntryPointWidget> {
   final List<BottomNavigationBarItem> _items = List.unmodifiable([
     BottomNavigationBarItem(icon: Icon(Icons.search), label: "ترجمه لغت"),
     BottomNavigationBarItem(icon: Icon(Icons.mic), label: "ترجمه صوتی"),
-    BottomNavigationBarItem(icon: Icon(Icons.favorite_border), label: "برگزیده ها"),
+    BottomNavigationBarItem(
+        icon: Icon(Icons.favorite_border), label: "برگزیده ها"),
     BottomNavigationBarItem(icon: Icon(Icons.settings), label: "تنظیمات"),
   ]);
 
