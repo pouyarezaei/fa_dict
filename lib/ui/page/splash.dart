@@ -1,5 +1,4 @@
 import 'package:fa_dict/bloc/database_builder/database_builder_bloc.dart';
-import 'package:fa_dict/ui/color_palette.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -10,8 +9,6 @@ class SplashScreenWidget extends StatefulWidget {
 }
 
 class _SplashScreenWidgetState extends State<SplashScreenWidget> {
-  bool showItem = false;
-
   @override
   void initState() {
     super.initState();
@@ -29,8 +26,8 @@ class _SplashScreenWidgetState extends State<SplashScreenWidget> {
           Column(
             children: [
               CircularProgressIndicator(
+                color: Theme.of(context).primaryColor,
                 strokeWidth: 2,
-                color: ColorPalette.wildWatermelon,
               ),
               SizedBox(
                 height: 5,

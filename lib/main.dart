@@ -1,5 +1,6 @@
 import 'package:fa_dict/bloc/database_builder/database_builder_bloc.dart';
 import 'package:fa_dict/bloc/theme/theme_bloc.dart';
+import 'package:fa_dict/bloc/wordsearch/word_search_bloc.dart';
 import 'package:fa_dict/ui/app_theme.dart';
 import 'package:fa_dict/ui/page/entry_point_widget.dart';
 import 'package:flutter/material.dart';
@@ -33,6 +34,9 @@ class _AppState extends State<App> {
       providers: [
         BlocProvider<DatabaseBuilderBloc>(
           create: (_) => DatabaseBuilderBloc(),
+        ),
+        BlocProvider<WordSearchBloc>(
+          create: (_) => WordSearchBloc(),
         ),
       ],
       child: BlocBuilder<ThemeBloc, ThemeState>(

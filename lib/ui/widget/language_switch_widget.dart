@@ -2,7 +2,6 @@ import 'package:flag/flag_enum.dart';
 import 'package:flag/flag_widget.dart';
 import 'package:flutter/material.dart';
 
-import '../color_palette.dart';
 import 'language_dropdown_item.dart';
 
 class LanguageSwitch extends StatelessWidget {
@@ -59,7 +58,6 @@ class LanguageSwitch extends StatelessWidget {
         ),
         Icon(
           Icons.compare_arrows,
-          color: ColorPalette.buccaneer,
         ),
         DropdownButton(
           icon: Icon(Icons.keyboard_arrow_down),

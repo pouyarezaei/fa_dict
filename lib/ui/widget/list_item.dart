@@ -1,11 +1,12 @@
+import 'package:fa_dict/bloc/wordsearch/word_search_bloc.dart';
+import 'package:fa_dict/data/entity/word_entity.dart';
 import 'package:flutter/material.dart';
-
-import '../color_palette.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class ListItem extends StatelessWidget {
-  final int index;
+  final WordEntity wordEntity;
 
-  const ListItem({Key? key, required this.index}) : super(key: key);
+  const ListItem({Key? key, required this.wordEntity}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -13,19 +14,30 @@ class ListItem extends StatelessWidget {
       elevation: 1,
       margin: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
       child: ListTile(
-        title: Text("کلمه"),
+        title: Text(
+          wordEntity.persianWord,
+          style: Theme.of(context).textTheme.bodyText1,
+        ),
         leading: IconButton(
-          onPressed: () {},
+          onPressed: () => _onFavButtonClicked(context),
           icon: Icon(
-            (index) % 2 == 0 ? Icons.favorite_border : Icons.favorite,
-            color: ColorPalette.mandy,
+            wordEntity.isFav == 1 ? Icons.favorite : Icons.favorite_border,
+            color: Theme.of(context).primaryColor,
           ),
         ),
         trailing: Text(
-          "Word",
-          style: TextStyle(fontWeight: FontWeight.bold),
+          wordEntity.englishWord,
+          style: Theme.of(context).textTheme.bodyText2,
         ),
       ),
     );
+  }
+
+  void _onFavButtonClicked(BuildContext context) {
+    WordSearchBloc wordSearchBloc = BlocProvider.of<WordSearchBloc>(context);
+    if (wordEntity.isFav == 1)
+      wordSearchBloc.add(RemoveFavoriteWordEvent(word: wordEntity.englishWord));
+    if (wordEntity.isFav == 0)
+      wordSearchBloc.add(AddFavoriteWordEvent(word: wordEntity.englishWord));
   }
 }

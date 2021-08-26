@@ -34,6 +34,8 @@ dependencies:
   path_provider: ^2.0.2
   animations: ^2.0.1
   flag: ^5.0.1
+  speech_to_text: ^5.0.0
+  rxdart: ^0.27.1
 
 dev_dependencies:
   flutter_test:
@@ -50,6 +52,12 @@ flutter:
         - asset: fonts/IranSans-Regular.ttf
         - asset: fonts/IranSans-Bold.ttf
           weight: 700
+    - family: Roboto
+      fonts:
+        - asset: fonts/Roboto-Regular.ttf
+        - asset: fonts/Roboto-Medium.ttf
+        - asset: fonts/Roboto-Thin.ttf
+        - asset: fonts/Roboto-Bold.ttf
   assets:
     - assets/splash.jpg
     - assets/

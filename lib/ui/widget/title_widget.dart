@@ -11,7 +11,7 @@ class TitleWidget extends StatelessWidget {
       margin: EdgeInsets.fromLTRB(0, 32, 32, 0),
       child: Text(
         title,
-        style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+        style: Theme.of(context).textTheme.headline6,
       ),
     );
   }

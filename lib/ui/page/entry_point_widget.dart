@@ -1,6 +1,5 @@
 import 'package:animations/animations.dart';
 import 'package:fa_dict/bloc/database_builder/database_builder_bloc.dart';
-import 'package:fa_dict/ui/color_palette.dart';
 import 'package:fa_dict/ui/page/favorite.dart';
 import 'package:fa_dict/ui/page/setting.dart';
 import 'package:fa_dict/ui/page/splash.dart';
@@ -52,10 +51,10 @@ class _EntryPointWidgetState extends State<EntryPointWidget> {
           bottomNavigationBar: state.showSplash
               ? null
               : BottomNavigationBar(
+                  selectedItemColor: Theme.of(context).primaryColor,
+                  unselectedItemColor: Theme.of(context).accentColor,
                   currentIndex: _selectedIndex,
-                  selectedItemColor: ColorPalette.wildWatermelon,
                   onTap: _onItemTapped,
-                  unselectedItemColor: ColorPalette.bilobaFlower,
                   items: _items),
         );
       },

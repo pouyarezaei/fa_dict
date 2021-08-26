@@ -20,7 +20,10 @@ class LanguageDropDownItem extends StatelessWidget {
                 shape: BoxShape.circle,
               ),
               child: flag),
-          Text(country)
+          Text(
+            country,
+            style: Theme.of(context).textTheme.bodyText1,
+          )
         ],
       ),
     );
