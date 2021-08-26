@@ -17,10 +17,12 @@ This Application written with flutter framework and used bloc state management t
 
 # views
 
-     Voice Search      |     Live Search      |     Theme Switch      
-:-------------------------:|:------------------------:|:------------------------:
-![](images/voice.gif) |   ![](images/live.gif) |  ![](images/theme.gif)
 
+<p float="left">
+  <img src="images/voice.gif" width="auto" />
+  <img src="images/live.gif" width="auto" /> 
+  <img src="images/theme.gif" width="auto" />
+</p>
 
 ![](images/light.jpg)
 
