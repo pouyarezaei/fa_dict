@@ -1,16 +1,29 @@
 # fa_dict
 
-re
+This Application is written for internships course.
 
-## Getting Started
+# about
 
-This project is a starting point for a Flutter application.
+This Application is a multilingual dictionary program based on open source databases that is currently implemented for both Persian and English languages.
 
-A few resources to get you started if this is your first Flutter project:
+This Application written with flutter framework and used bloc state management tools.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+# features
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Word-for-word translation using the database
+2. Live Search
+3. Multi theme(store the theme selected by the user)
+4. Speech to text
+
+# views
+
+![](images/voice.gif)
+
+![theme](images/theme.gif)
+
+![live](images/live.gif)
+
+![](images/light.jpg)
+
+![](images/dark.jpg)
+
