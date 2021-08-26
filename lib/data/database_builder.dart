@@ -22,7 +22,6 @@ class DatabaseBuilder {
     }
     print("db file copied to $dbPath");
     // Open/create the database at a given path
-    // FOREIGN KEY (word_id) REFERENCES en_fa (id) ON DELETE CASCADE ON UPDATE NO ACTION,
     Database database = await openDatabase(dbPath, version: DB_VERSION,
         onCreate: (Database db, int version) async {
       await db.rawQuery(
