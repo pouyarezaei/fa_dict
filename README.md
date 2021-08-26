@@ -16,13 +16,14 @@ This Application written with flutter framework and used bloc state management t
 4. Speech to text
 
 # views
-<p float="left">
-  <img src="images/voice.gif" width="100" />
-  <img src="images/live.gif" width="100" /> 
-  <img src="images/theme.gif" width="100" />
-</p>
+
+     Voice Search      |     Live Search      |     Theme Switch      
+:-------------------------:|:------------------------:|:------------------------:
+![](images/voice.gif) |   ![](images/live.gif) |  ![](images/theme.gif)
+
 
 ![](images/light.jpg)
+
 
 ![](images/dark.jpg)
 
