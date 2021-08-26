@@ -19,9 +19,9 @@ This Application written with flutter framework and used bloc state management t
 
 
 <p float="left">
-  <img src="images/voice.gif" width="auto" />
-  <img src="images/live.gif" width="auto" /> 
-  <img src="images/theme.gif" width="auto" />
+  <img src="images/voice.gif" width="333" />
+  <img src="images/live.gif" width="333" /> 
+  <img src="images/theme.gif" width="333" />
 </p>
 
 ![](images/light.jpg)
